@@ -132,5 +132,3 @@ resource "aws_instance" "example" {
    Após a aplicação, você pode acessar a instância EC2 para garantir que o Git, Docker e o repositório foram configurados corretamente.
 
 Este arquivo Terraform configura uma instância EC2 básica com todas as ferramentas necessárias para desenvolvimento e testes. O uso do `user_data` permite uma configuração automatizada e eficiente da instância durante a criação.
-
-## Criando multiplos ambientes
