@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Exponha a porta que a aplicação utilizará
-EXPOSE 8501
+EXPOSE 80
 
 # Comando para rodar a aplicação
 CMD ["streamlit", "run", "app.py"]

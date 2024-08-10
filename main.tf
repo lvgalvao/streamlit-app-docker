@@ -15,7 +15,7 @@ resource "aws_instance" "example" {
               sudo dnf install git -y
               
               # Clonar o repositório Git
-              git clone https://github.com/lvgalvao/fastapi-deploy-ec2 /home/ec2-user/fastapi-deploy-ec2
+              git clone https://github.com/lvgalvao/streamlit-app-docker.git /home/ec2-user/streamlit-app-docker
               
               # Instalar Docker
               sudo dnf install docker -y
@@ -28,7 +28,7 @@ resource "aws_instance" "example" {
               sudo usermod -aG docker ec2-user
               
               # Navegar para o diretório clonado
-              cd /home/ec2-user/fastapi-deploy-ec2
+              cd /home/ec2-user/streamlit-app-docker
               EOF
 
   tags = {
