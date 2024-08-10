@@ -119,10 +119,10 @@ resource "aws_instance" "example" {
               cd /home/ec2-user/streamlit-app-docker
 
               # Construir a imagem docker
-              docker build -t streamlit-app-docker .
+              sudo docker build -t streamlit-app-docker .
 
               # Rodar a imagem
-              docker run -p 80:80 streamlit-app-docker
+              sudo docker run -p 80:80 streamlit-app-docker
 
               EOF
 
